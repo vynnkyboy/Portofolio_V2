@@ -214,7 +214,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-             Seorang lulusan Teknik Jaringan Komputer dan Telekomunikasi yang memiliki ketertarikan besar dalam pengembangan Front-End. Saya berfokus pada menciptakan pengalaman digital yang menarik dan selalu berusaha memberikan solusi terbaik dalam setiap proyek yang saya kerjakan.
+             An active student in the Computer Science department with a strong commitment to personal development in the field of technology. My internship and academic experiences have enhanced my soft skills, such as effective time management, teamwork, and maintaining composure under pressure. Additionally, my involvement in extracurricular organizations has significantly contributed to developing my leadership skills. I am an individual with strong interpersonal skills. I am committed to continuous learning and growth to become a valuable asset in both academic and professional environments.
             </p>
 
                {/* Quote Section */}
