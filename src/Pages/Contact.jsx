@@ -34,8 +34,8 @@ const ContactPage = () => {
     setIsSubmitting(true);
 
     Swal.fire({
-      title: 'Mengirim Pesan...',
-      html: 'Harap tunggu selagi kami mengirim pesan Anda',
+      title: 'Sending message...',
+      html: 'Please wait while your message is being sent.',
       allowOutsideClick: false,
       didOpen: () => {
         Swal.showLoading();
@@ -55,8 +55,8 @@ const ContactPage = () => {
 
       if (response.ok) {
         Swal.fire({
-          title: 'Berhasil!',
-          text: 'Pesan Anda telah berhasil terkirim!',
+          title: 'Success!',
+          text: 'Your message has been sent successfully.',
           icon: 'success',
           confirmButtonColor: '#6366f1',
           timer: 2000,
@@ -69,12 +69,12 @@ const ContactPage = () => {
           message: "",
         });
       } else {
-        throw new Error('Gagal mengirim pesan');
+        throw new Error('Failed to send message');
       }
     } catch (error) {
       Swal.fire({
-        title: 'Gagal!',
-        text: 'Terjadi kesalahan. Silakan coba lagi nanti.',
+        title: 'Error!',
+        text: 'There was an error sending your message. Please try again later.',
         icon: 'error',
         confirmButtonColor: '#6366f1'
       });
@@ -101,7 +101,7 @@ const ContactPage = () => {
               WebkitTextFillColor: "transparent",
             }}
           >
-            Hubungi Saya
+            Contact Me
           </span>
         </h2>
         <p
@@ -109,7 +109,7 @@ const ContactPage = () => {
           data-aos-duration="1100"
           className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2"
         >
-          Punya pertanyaan? Kirimi saya pesan, dan saya akan segera membalasnya.
+          Have a question? Send me a message, and I'll get back to you right away.
         </p>
       </div>
 
@@ -125,10 +125,10 @@ const ContactPage = () => {
             <div className="flex justify-between items-start mb-8">
               <div>
                 <h2 className="text-4xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
-                  Hubungi
+                  Contact
                 </h2>
                 <p className="text-gray-400">
-                  Ada yang ingin didiskusikan? Kirim saya pesan dan mari kita bicara.
+                  Is there anything you would like to discuss? Send me a message and let's talk.
                 </p>
               </div>
               <Share2 className="w-10 h-10 text-[#6366f1] opacity-50" />
@@ -147,7 +147,7 @@ const ContactPage = () => {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Nama Anda"
+                  placeholder="Your name"
                   value={formData.name}
                   onChange={handleChange}
                   disabled={isSubmitting}
@@ -164,7 +164,7 @@ const ContactPage = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email Anda"
+                  placeholder="Your email"
                   value={formData.email}
                   onChange={handleChange}
                   disabled={isSubmitting}
@@ -180,7 +180,7 @@ const ContactPage = () => {
                 <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors" />
                 <textarea
                   name="message"
-                  placeholder="Pesan Anda"
+                  placeholder="Your message"
                   value={formData.message}
                   onChange={handleChange}
                   disabled={isSubmitting}
@@ -196,7 +196,7 @@ const ContactPage = () => {
                 className="w-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#6366f1]/20 active:scale-[0.98] flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
                 <Send className="w-5 h-5" />
-                {isSubmitting ? 'Mengirim...' : 'Kirim Pesan'}
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
 
