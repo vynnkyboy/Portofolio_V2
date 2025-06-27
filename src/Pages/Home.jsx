@@ -25,7 +25,7 @@ const MainTitle = memo(() => (
       <span className="relative inline-block">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
-          Fullstack
+          Web
         </span>
       </span>
       <br />
@@ -80,9 +80,9 @@ const PAUSE_DURATION = 2000;
 const WORDS = ["AI Enthusiast", "JavaScript Artisan"];
 const TECH_STACK = ["React", "Tailwind", "Hapi.js", "MongoDB"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "https://github.com/septianhadinugroho" },
-  { icon: Linkedin, link: "https://www.linkedin.com/in/septian-hadi-nugroho/" },
-  { icon: Instagram, link: "https://www.instagram.com/septianhnr" }
+  { icon: Github, link: "https://github.com/vynnkyboy" },
+  { icon: Linkedin, link: "https://www.linkedin.com/in/alvin-alfido/" },
+  { icon: Instagram, link: "https://www.instagram.com/vynn4youu" }
 ];
 
 const Home = () => {
